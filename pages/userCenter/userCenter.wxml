@@ -1,2 +1,49 @@
 <!--pages/userCenter/userCenter.wxml-->
-<text>pages/userCenter/userCenter.wxml</text>
+<view class='all'>
+  <view class='user'>
+    <view class="userinfo">
+      <block wx:if="{{!hasUserInfo && canIUse}}">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="../../images/notlogin.png" mode="cover"></image>
+      <button  class="userLogin-btn" mode='scaleToFill' open-type="getUserInfo" bindgetuserinfo="getUserInfo">立即登录</button>
+      </block>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class='user-money'>
+      <text class='money'>余额: {{balance}} ￥</text>
+      <text class='getmoney' bindtap='getmoney'>去提现</text>
+    </view>
+  </view>
+  <view class="usermotto" bindtap='mypublish'>
+    <image class='img' src='../../images/Mypublish.png' mode='scaleToFill'></image>
+    <text class="user-motto" >我的发布</text>
+    <image class='img_go' src='../../images/right.png' mode='scaleToFill'></image>
+  </view>
+  <view class="usermotto" bindtap='mysell'>
+    <image class='img' src='../../images/sell.png' mode='scaleToFill'></image>
+    <text class="user-motto" >我卖出的</text>
+    <image class='img_go' src='../../images/right.png' mode='scaleToFill'></image>
+  </view>
+  <view class="usermotto" bindtap='mybuy'>
+    <image class='img' src='../../images/buy.png' mode='scaleToFill'></image>
+    <text class="user-motto" >我买到的</text>
+    <image class='img_go' src='../../images/right.png' mode='scaleToFill'></image>
+  </view>
+  <view class="usermotto" bindtap='myMsg'>
+    <image class='img' src='../../images/msg.png' mode='scaleToFill'></image>
+    <text class="user-motto" >我的消息</text>
+    <image class='img_go' src='../../images/right.png' mode='scaleToFill'></image>
+  </view>
+  <view class='blank'></view>
+  <view class="usermotto" bindtap='feedback'>
+    <image class='img' src='../../images/feedback.png' mode='scaleToFill'></image>
+    <text class="user-motto" >问题反馈</text>
+    <image class='img_go' src='../../images/right.png' mode='scaleToFill'></image>
+  </view><view class="usermotto" bindtap='about'>
+    <image class='img' src='../../images/about.png' mode='scaleToFill'></image>
+    <text class="user-motto" >关于书城</text>
+    <image class='img_go' src='../../images/right.png' mode='scaleToFill'></image>
+  </view>
+</view>

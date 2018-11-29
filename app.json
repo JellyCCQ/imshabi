@@ -2,7 +2,13 @@
   "pages":[
     "pages/index/index",
     "pages/userCenter/userCenter",
-    "pages/publish/publish"
+    "pages/publish/publish",
+    "pages/mypublish/mypublish",
+    "pages/mysell/mysell",
+    "pages/mybuy/mybuy",
+    "pages/myMsg/myMsg",
+    "pages/feedback/feedback",
+    "pages/about/about"
   ],
   "window":{
     "backgroundTextStyle":"light",
