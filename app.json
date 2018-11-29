@@ -2,8 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/userCenter/userCenter",
-    "pages/publish/publish",
-    "pages/logs/logs"
+    "pages/publish/publish"
   ],
   "window":{
     "backgroundTextStyle":"light",
