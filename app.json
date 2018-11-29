@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/userCenter/userCenter",
+    "pages/publish/publish",
     "pages/logs/logs"
   ],
   "window":{
@@ -8,5 +10,24 @@
     "navigationBarBackgroundColor": "#FF6347",
     "navigationBarTitleText": "二手书城",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index1.png",
+      "selectedIconPath": "images/index2.png"
+    },{
+      "pagePath": "pages/publish/publish",
+      "text": "发布",
+      "iconPath": "images/publish1.png",
+      "selectedIconPath": "images/publish2.png"
+    },{
+      "pagePath": "pages/userCenter/userCenter",
+      "text": "用户中心",
+      "iconPath": "images/user1.png",
+      "selectedIconPath": "images/user2.png"
+    }
+    ]
   }
 }
