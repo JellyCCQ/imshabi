@@ -1,0 +1,10 @@
+<view class='all'>
+<view class='search-top'>
+  <view class="index_search_btn" bindtap="search_click">
+     <image class="index_search" src="../../images/search.png"></image>
+     <text>搜索书籍</text>
+  </view>
+</view>
+
+</view>
+

@@ -1,0 +1,48 @@
+.all {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.search-top{
+  background: #FF6347;
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index_search_btn {
+  height: 70rpx;
+  width: 90%;
+  background-color: white;
+  color: #a1a1a1;
+  font-size: 30rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+}
+
+.index_search {
+  margin-right: 3px;
+  width: 16px;
+  height: 16px;
+}
+.list{
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.listItem{
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.listItem card{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10rpx;
+}

@@ -42,7 +42,7 @@
 				{
 					"id": 0,
 					"name": "user",
-					"pathName": "pages/index/index",
+					"pathName": "pages/detail/detail",
 					"query": ""
 				}
 			]

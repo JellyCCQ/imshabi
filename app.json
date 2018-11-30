@@ -8,7 +8,10 @@
     "pages/mybuy/mybuy",
     "pages/myMsg/myMsg",
     "pages/feedback/feedback",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/search/search",
+    "pages/regster/regster",
+    "pages/detail/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
