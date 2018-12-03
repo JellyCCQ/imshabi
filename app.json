@@ -11,7 +11,9 @@
     "pages/about/about",
     "pages/search/search",
     "pages/regster/regster",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/userInfo/userInfo",
+    "pages/shoppingCar/shoppingCar"
   ],
   "window":{
     "backgroundTextStyle":"light",

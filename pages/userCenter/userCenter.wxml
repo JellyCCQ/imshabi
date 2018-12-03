@@ -7,7 +7,7 @@
       <button  class="userLogin-btn" mode='scaleToFill' open-type="getUserInfo" bindgetuserinfo="getUserInfo">立即登录</button>
       </block>
       <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <image bindtap="binduserInfo" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
       </block>
     </view>
@@ -16,6 +16,12 @@
       <text class='getmoney' bindtap='getmoney'>去提现</text>
     </view>
   </view>
+  <view class="usermotto" bindtap='shoppingCar'>
+    <image class='img' src='../../images/shoppingCar.png' mode='scaleToFill'></image>
+    <text class="user-motto" >购物车</text>
+    <image class='img_go' src='../../images/right.png' mode='scaleToFill'></image>
+  </view>
+
   <view class="usermotto" bindtap='mypublish'>
     <image class='img' src='../../images/Mypublish.png' mode='scaleToFill'></image>
     <text class="user-motto" >我的发布</text>

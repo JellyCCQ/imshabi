@@ -1,11 +1,16 @@
-// pages/publish/publish.js
+// pages/userInfo/userInfo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    show : "",
+    username:"jelly",
+    usergender:"男",
+    userdate:"2018-12-1",
+    userintroduce:"巴拉巴拉小魔仙",
+    userphone:"13800138000",
+    useraddress:"深圳大学"
   },
 
   /**
@@ -63,32 +68,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  scanbtn : function(){
-    var that =this;
-    wx.scanCode({
-      onlyFromCamera: true,
-      scanType: [],
-      success: function(res) {
-        that.show = "结果:" + res.result + "二维码类型:" + res.scanType + "字符集:" + res.charSet + "路径:" + res.path;
-        that.setData({
-          show: that.show
-        })
-        wx.showToast({
-          title: '成功',
-          icon: 'success',
-          duration: 2000
-        })
-      },
-      fail: function(res) {
-        wx.showToast({
-          title: '失败',
-          icon: 'success',
-          duration: 2000
-        })
-      },
-      complete: function(res) {
-        console.log(that.show)
-      },
+  savebtn: function () {
+    wx.navigateBack({
+      delta: 1,
     })
   }
 })

@@ -1,0 +1,40 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view class='all'>
+  <view class='infoList'>
+    <text class='infoTitle'>头像</text>
+    <image class='icon-head' src='{{userInfo.avatarUrl}}'></image>
+    <image class='icon-right' src='../../images/right.png'></image>
+  </view>
+  <view class='infoList'>
+    <text class='infoTitle'>昵称</text>
+    <text class='infoContent'>{{username}}</text>
+    <image class='icon-right' src='../../images/right.png'></image>
+  </view>
+  <view class='infoList'>
+    <text class='infoTitle'>性别</text>
+    <text class='infoContent'>{{usergender}}</text>
+    <image class='icon-right' src='../../images/right.png'></image>
+  </view>
+  <view class='infoList'>
+    <text class='infoTitle'>出生日期</text>
+    <text class='infoContent'>{{userdate}}</text>
+    <image class='icon-right' src='../../images/right.png'></image>
+  </view>
+  <view class='infoList'>
+    <text class='infoTitle'>个人介绍</text>
+    <text class='infoContent'>{{userintroduce}}</text>
+    <image class='icon-right' src='../../images/right.png'></image>
+  </view>
+  <view class='blank'></view>
+  <view class='infoList'>
+    <text class='infoTitle'>手机号</text>
+    <text class='infoContent'>{{userphone}}</text>
+    <image class='icon-right' src='../../images/right.png'></image>
+  </view>
+  <view class='infoList'>
+    <text class='infoTitle'>收货地址</text>
+    <text class='infoContent'>{{useraddress}}</text>
+    <image class='icon-right' src='../../images/right.png'></image>
+  </view>
+  <view class='save-btn' bindtap='savebtn'>保存</view>
+</view>

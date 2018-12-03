@@ -20,7 +20,7 @@
                   <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
                     <view class="list_item">
                       <view class='left'>
-                        <navigator url='details?id={{item.goods_id}}'>
+                        <navigator url='../detail/detail?id={{item.goods_id}}'>
                           <view class='img'>
                             <image src="{{item.goods_img}}"  mode="widthFix"/>
                           </view>

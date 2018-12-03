@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    id: 0,
     is_shoucang: 0,
     goods_info: { goods_id: 1, goods_title: "商品标题1", goods_price: '100', goods_yunfei: 0, goods_kucun: 100, goods_xiaoliang: 1, content: '商品介绍详情商品介绍详情商品介绍详情商品介绍详情商品介绍详情商品介绍详情商品介绍详情' },
     goods_img: [
@@ -36,11 +37,21 @@ Page({
       urls: imglist// 需要预览的图片http链接列表  
     })
   },
+  shoucang:function(){
+    this.setData({
+      is_shoucang: 1
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      id: options.id
+    })
   },
+  addshoppingCar:function(){
+    
+  }
 })

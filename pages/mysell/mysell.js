@@ -5,7 +5,49 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    dataList: [
+      {
+        goods_id: 1,
+        title: '商品标题1',
+        goods_img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543513719258&di=830db36238903a2c634602d70031f73a&imgtype=0&src=http%3A%2F%2Fimg2.winxuancdn.com%2F3780%2F1201563780_0_1_800x800.jpg%3F1515031604450%26imageMogr2%2Fthumbnail%2F350x350',
+        time: '2018-12-1',
+        price: '60',
+        num: "1",
+        ordernumber:"12345678"
+      }, {
+        goods_id: 1,
+        title: '商品标题1',
+        goods_img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543513719258&di=830db36238903a2c634602d70031f73a&imgtype=0&src=http%3A%2F%2Fimg2.winxuancdn.com%2F3780%2F1201563780_0_1_800x800.jpg%3F1515031604450%26imageMogr2%2Fthumbnail%2F350x350',
+        time: '2018-12-2',
+        price: '70',
+        num: "1",
+        ordernumber: "12345678"
+      }, {
+        goods_id: 1,
+        title: '商品标题1',
+        goods_img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543513719258&di=830db36238903a2c634602d70031f73a&imgtype=0&src=http%3A%2F%2Fimg2.winxuancdn.com%2F3780%2F1201563780_0_1_800x800.jpg%3F1515031604450%26imageMogr2%2Fthumbnail%2F350x350',
+        time: '2018-12-1',
+        price: '60',
+        num: "1",
+        ordernumber: "12345678"
+      }, {
+        goods_id: 1,
+        title: '商品标题1',
+        goods_img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543513719258&di=830db36238903a2c634602d70031f73a&imgtype=0&src=http%3A%2F%2Fimg2.winxuancdn.com%2F3780%2F1201563780_0_1_800x800.jpg%3F1515031604450%26imageMogr2%2Fthumbnail%2F350x350',
+        time: '2018-12-11',
+        price: '30',
+        num: "1",
+        ordernumber: "12345678"
+      }, {
+        goods_id: 1,
+        title: '商品标题1',
+        goods_img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543513719258&di=830db36238903a2c634602d70031f73a&imgtype=0&src=http%3A%2F%2Fimg2.winxuancdn.com%2F3780%2F1201563780_0_1_800x800.jpg%3F1515031604450%26imageMogr2%2Fthumbnail%2F350x350',
+        time: '2018-11-1',
+        price: '160',
+        num: "1",
+        ordernumber: "12345678"
+      }
+    ]
   },
 
   /**

@@ -32,7 +32,7 @@
 <scroll-view class='list'>
   <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
   <view class="list_item">
-      <navigator url='details?id={{item.goods_id}}'>
+      <navigator url='../detail/detail?id={{item.goods_id}}'>
       <view class='img'>
         <image src="{{imghref}}{{item.goods_img}}"  mode="scaleToFill"/>
       </view>

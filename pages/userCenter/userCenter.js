@@ -44,50 +44,15 @@ Page({
       hasUserInfo: true
     })
   },
-  allOrder: function () {
-    var islogin = this.data.hasUserInfo;
-    if (islogin) {
-      wx.request({
-        url: 'https://jelly666.top/getdealorder/',
-        data: util.json2Form({
-          user: app.globalData.userInfo.nickName,
-        }),
-        header: { "Content-Type": "application/x-www-form-urlencoded" },
-        method: 'POST',
-        dataType: 'json',
-        responseType: 'text',
-        success: function (res) {
-          var temp = res.data
-          console.log(temp)
-          app.globalData.toDealList = temp
-
-        },
-      })
-      wx.request({
-        url: 'https://jelly666.top/getfinishedorder/',
-        data: util.json2Form({
-          user: app.globalData.userInfo.nickName,
-        }),
-        header: { "Content-Type": "application/x-www-form-urlencoded" },
-        method: 'POST',
-        dataType: 'json',
-        responseType: 'text',
-        success: function (res) {
-          var temp = res.data
-          console.log(temp)
-          app.globalData.finishedList = temp
-        },
-      })
-      wx.navigateTo({
-        url: '../orderForm/orderForm'
-      })
-    } else {
-      wx.showToast({
-        title: '请登录',
-        duration: 2000,
-        mask: true,
-      })
-    }
+  binduserInfo:function(){
+    wx.navigateTo({
+      url: '../userInfo/userInfo'
+    })
+  },
+  shoppingCar:function(){
+    wx.navigateTo({
+      url: '../shoppingCar/shoppingCar'
+    })
   },
   mypublish: function () {
     wx.navigateTo({
